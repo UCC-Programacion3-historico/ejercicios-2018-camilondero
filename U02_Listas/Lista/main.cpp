@@ -1,16 +1,17 @@
+//
+// Created by martin on 21/8/19.
+//
+
 #include <iostream>
 #include "Lista.h"
+
 using namespace std;
 
-int main(){
-    Lista<int> l;
+int main(int argc, char *argv[]) {
+    cout << "Argumentos: "<< endl;
 
-    l.insertarPrimero(3);
-    l.insertarPrimero(2);
-    l.insertarPrimero(1);
-
-    cout << "Hola mindo"<< l.getTamanio() << endl;
-
-
+    for (int i = 0; i < argc; ++i) {
+        cout << i << ": " << argv[i] << endl;
+    }
     return 0;
 }
