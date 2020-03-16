@@ -1,4 +1,5 @@
 #include "../Lista/Lista.h"
+
 #ifndef FNINVIERTE_H
 #define FNINVIERTE_H
 
@@ -9,21 +10,33 @@ será el segundo, y así hasta que el primero sea el último. Considere que la l
 vacía y que no se construira una nueva, sólo se invertirá el orden de los elementos de la
 lista original.*/
 
+<<<<<<< HEAD
 
-template <class T>
-void fnInvierte (Lista<T> *lis);
+void fnInvierte (Lista<int> &lis){
 
-
-template <class T>
-void fnInvierte (Lista<T> *lis){
-
-    int t= lis->getTamanio();
+    int t= lis.getTamanio();
 
     for(int i=0; i<t;i++)
     {
-        lis->insertar(i,lis->getDato(t-1));
-        lis->remover(t);
+        lis.insertar(i,lis.getDato(t-1));
+        lis.remover(t);
 
+=======
+template<class T>
+void fnInvierte(Lista<T> *lis);
+
+
+template<class T>
+void fnInvierte(Lista<T> *lis) {
+    T aux, aux2;
+    int tam = lis->getTamanio();
+
+    for (int i = 0; i < tam / 2; ++i) {
+        aux = lis->getDato(i);
+        aux2 = lis->getDato(tam - 1 - i);
+        lis->reemplazar(i,aux2);
+        lis->reemplazar(tam - 1 - i,aux);
+>>>>>>> 667512902bd8e0d182aa525825d39ef02208e09a
     }
 
 }

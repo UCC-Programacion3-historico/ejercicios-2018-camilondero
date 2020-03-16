@@ -120,4 +120,4 @@ T Cola<T>::peek() {
     return frente->getDato();
 }
 
-#endif //LISTA_H
+#endif //COLA_H

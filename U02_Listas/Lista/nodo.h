@@ -10,6 +10,7 @@ class Nodo {
 private:
     T dato;
     Nodo<T> *siguiente;
+
 public:
     T getDato()  {
         return dato;
@@ -26,6 +27,7 @@ public:
     void setSiguiente(Nodo<T> *siguiente) {
         this->siguiente = siguiente;
     }
+
 
 };
 

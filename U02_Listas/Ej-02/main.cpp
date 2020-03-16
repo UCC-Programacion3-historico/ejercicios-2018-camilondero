@@ -38,7 +38,7 @@ int main() {
             cout << "ingrese posicion a insertar" << endl;
             cin >> pos;
             lis.insertar(dato, pos);
-        } else if (opcion == 2)//MMM
+        } else if (opcion == 2)
             lis.insertarUltimo(dato);
         else
             cout << "numero ingresado incorrecto" << endl;

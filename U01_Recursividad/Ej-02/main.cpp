@@ -4,17 +4,21 @@ using namespace std;
 
 int main() {
 
-    int *v,n;
+  int *arr;
+  int n;
 
-    cout<<"ingrese tamanio del vector"<<endl;
-    cin>>n;
+  cout<<"ingrese n"<<endl;
+  cin>>n;
 
-    v=new int[n];
+  arr= new int [n];
 
-    for (int i = 0; i < n; i++) {
-        cout<<"ingrese v["<<i<<"]= "<<endl;
-        cin >> v[i]; }
+  for(int i=0; i< n; i++)
+  {
+      cout<<"Ingrese los valores en el vector"<<endl;
+      cout<<"arr[ "<<i<<" ]=";
+      cin>>arr[i];
+  }
 
-    cout<<"el total de la sumatoria es :  "<<sumatoria(v,n);
+  cout<<sumatoria(arr,n);
 
 }

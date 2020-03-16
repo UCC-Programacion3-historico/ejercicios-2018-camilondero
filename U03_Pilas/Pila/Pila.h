@@ -1,5 +1,5 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef PILA_H
+#define PILA_H
 
 #include "nodo.h"
 
@@ -24,6 +24,9 @@ public:
     T peek();
 
     bool esVacia();
+
+    void insertAfter2(T oldValue, int n, T newValue);
+
 };
 
 
@@ -101,4 +104,16 @@ bool Pila<T>::esVacia() {
     return tope == nullptr;
 }
 
+
+template<class T>
+void Pila<T>::insertAfter2(T oldValue, int n, T newValue) {
+    Nodo<T> *aux = tope;
+
+    while(aux!= nullptr)
+        aux = aux->getSiguiente();
+
+
+}
+
 #endif //LISTA_H
+
